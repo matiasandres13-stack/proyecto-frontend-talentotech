@@ -230,6 +230,7 @@ main {
   .titulo-home,
   .titulo-contacto {
     font-size: 2.8rem; /* más chico en móvil */
+    text-align: center;
   }
 
   .parrafo-home {
