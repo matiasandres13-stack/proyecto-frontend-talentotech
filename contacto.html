@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__log">
+        <a href="./index.html"> LOGO Tienda de Matias </a>
+      </p>
+
+      <nav class="header_nav">
+        <ul>
+          <li>
+            <a href="./index.html"> Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="seccion-contacto">
+        <h1 class="titulo-contacto">Contacto</h1>
+        <form
+          class="form"
+          action="https://formspree.io/f/xwpnleyj"
+          method="POST"
+        >
+          <div class="campo-form">
+            <label for="email"> Correo:</label>
+            <input id="email" type="email" name="email" />
+          </div>
+
+          <div class="campo-form">
+            <label for="mensaje"> Mensaje:</label>
+            <textarea id="mensaje" name="message"></textarea>
+          </div>
+
+          <!-- Asunto del mail que te llega -->
+          <input type="hidden" name="subject" value="Contacto desde el sitio" />
+
+          <!-- your other form fields go here -->
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Esta pagina la realizo Matias</p>
+      <nav>
+        <ul>
+          <li>Instagram</li>
+          <li>Tiktok</li>
+          <li>X</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

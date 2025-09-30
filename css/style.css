@@ -1,0 +1,273 @@
+/*reset de css*/
+* {
+  margin: 0; /* Elimina los márgenes por defecto de todos los elementos */
+  padding: 0; /* Elimina el padding por defecto de todos los elementos */
+  box-sizing: border-box; /* Incluye el borde y padding en el cálculo del ancho/alto */
+}
+html {
+  font-size: 62.5%; /* Hace que 1rem = 10px (62.5% de 16px base) */
+}
+
+body {
+  font-family: "DM Serif Text", serif;
+  font-size: 2rem; /* Tamaño base de la fuente (20px aprox) */
+  font-weight: normal;
+  line-height: 1.5; /* da aire y legibilidad */
+  background-color: darkgray;
+  color: black;
+  display: flex; /* Convierte el body en contenedor flex */
+  flex-direction: column; /* Organiza los elementos en columna */
+  min-height: 100vh; /* Ocupa como mínimo el alto completo de la pantalla */
+}
+
+.header,
+.footer {
+  font-size: 2rem;
+  background-color: black;
+  color: bisque;
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido a los extremos */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.header__log {
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.header__log a,
+.header_nav a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: inherit; /* Hereda el color del contenedor padre */
+}
+
+.header_nav {
+  text-align: right; /* Alinea contenido a la derecha */
+  padding: 1rem;
+  list-style: none; /* Quita las viñetas (por si acaso) */
+  display: flex;
+}
+
+.header_nav ul {
+  list-style: none; /* Quita viñetas a la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem; /* Espaciado de 20px entre ítems */
+}
+
+.header_nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.footer p {
+  text-align: left;
+  padding: 1rem;
+}
+
+.footer nav {
+  text-align: right;
+  padding: 1rem;
+}
+
+.footer ul {
+  list-style: none; /* elimina las viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem; /* espacio entre los ítems */
+}
+
+main {
+  width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+  margin: 2rem auto; /* Centra horizontalmente con margen superior/inferior */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+  flex: 1; /* ocupa el espacio disponible entre header y footer (para que el footer quede en el fondo)*/
+}
+
+.titulo-home {
+  font-size: 4rem; /* Texto grande (40px aprox) */
+  margin: 2rem 0; /* Márgenes arriba y abajo */
+}
+
+.parrafo-home {
+  font-size: 2rem; /* Texto de 20px */
+  text-align: center;
+  width: 80%; /* Ocupa 80% del ancho disponible */
+  margin-bottom: 2rem; /* Separación inferior */
+}
+
+.productos-home {
+  width: 80%; /* Ocupa el 80% del ancho */
+  text-align: center;
+  padding: 1rem; /* Espaciado interno */
+  margin: 3rem; /* Espaciado externo */
+}
+
+.productos-home h2 {
+  text-align: center;
+  font-size: 3rem; /* Texto grande (30px aprox) */
+  padding: 2rem; /* Relleno interno */
+  margin: 3rem; /* Separación externa */
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente las tarjetas */
+  flex-wrap: wrap; /* Permite que salten de línea si no caben */
+  gap: 2rem; /* Espacio de 20px entre tarjetas */
+}
+
+.tarjeta-producto {
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 1rem; /* Bordes redondeados */
+  width: 30rem; /* Ancho fijo de 300px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Espacio entre elementos hijos */
+  background-color: black;
+  color: bisque;
+}
+
+.tarjeta-producto h3 {
+  font-size: 2rem; /* Tamaño 20px aprox */
+}
+
+.tarjeta-producto p {
+  font-size: 1.5rem; /* Texto de 15px aprox */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.tarjeta-producto img {
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+  border-radius: 0.5rem; /* Bordes levemente redondeados */
+}
+
+/* CONTACTOS */
+
+.seccion-contacto {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  margin: 2rem auto; /* Márgenes superior/inferior y centrado horizontal */
+}
+
+.titulo-contacto {
+  font-size: 4rem; /* Texto muy grande (40px aprox) */
+  text-align: center;
+  margin: 2rem 0; /* Espaciado arriba y abajo */
+}
+
+.form {
+  text-align: center;
+  background-color: black;
+  color: bisque;
+  padding: 5rem; /* Relleno interno amplio */
+  border-radius: 1rem; /* Bordes redondeados */
+  width: 30%; /* El formulario ocupa 30% del ancho de la pantalla */
+  margin: auto; /* Centra horizontalmente */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column;
+  gap: 2rem; /* Espacio vertical entre campos */
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espaciado entre etiqueta y campo */
+}
+
+.campo-form label {
+  font-size: 2rem; /* Texto de 20px */
+}
+
+.campo-form input,
+.campo-form textarea {
+  padding: 1rem; /* Espaciado interno */
+  font-size: 1.6rem;
+  border-radius: 0.5rem; /* Bordes redondeados */
+  border: none; /* Sin borde predeterminado */
+}
+
+.form button {
+  background-color: bisque;
+  color: black;
+  border: none; /* Sin borde */
+  padding: 1rem; /* Espaciado interno */
+  font-size: 2rem; /* Texto grande */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar encima */
+}
+
+/* 📱 Estilos Responsive */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.6rem; /* reduce base para mejor legibilidad */
+  }
+
+  /* HEADER */
+  .header,
+  .footer {
+    flex-direction: column; /* pasa logo/nav uno abajo del otro */
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .header__logo {
+    font-size: 2rem; /* reduce logo */
+  }
+
+  .header_nav ul {
+    flex-direction: column; /* menú en columna */
+    gap: 1rem;
+  }
+
+  /* MAIN */
+  .titulo-home,
+  .titulo-contacto {
+    font-size: 2.8rem; /* más chico en móvil */
+  }
+
+  .parrafo-home {
+    width: 100%; /* ocupa todo el ancho */
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  /* PRODUCTOS */
+  .productos-home {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .contenedor-tarjetas {
+    flex-direction: column; /* apila productos */
+    align-items: center;
+  }
+
+  .tarjeta-producto {
+    width: 90%; /* ocupa casi todo el ancho en móvil */
+  }
+
+  /* FORMULARIO */
+  .form {
+    width: 95%; /* ocupa casi toda la pantalla */
+    padding: 2rem;
+  }
+
+  .form button {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  /* FOOTER */
+  .footer ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
